@@ -29,10 +29,43 @@
 #     total+=num
 # print("Your number is", total)
 
-
-import random
-num=random.randrange(10)
-print(num)
+#
+# import random
+# num=random.randrange(10)
+# print(num)
 
 #range(5,100)
 # ^^^ between 5 and 100
+
+
+
+
+#
+# gives you random numbers between 2 and 99
+#
+# import random
+# num=random.randrange(2,100)
+# num = random.randint()
+# print(num)
+#
+#
+# (start number, stop number, step)
+
+#
+# var = 11
+# while var>1:
+#     var-=1
+#     if var==5:
+#         continue
+#     print("variable is:", var)
+# print("done")
+
+
+
+#make sides 100 units long
+turtle = int(input("How many sides?"))
+if turtle > 2:
+n
+    else:
+    print("invalid")
+
