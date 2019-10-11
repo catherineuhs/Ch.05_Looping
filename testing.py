@@ -7,27 +7,27 @@
 #     for j in range(5):
 #         print(i)
 #         print(j)
-
+#
 # total = 0
 # for i in range(101):
 #     num=int(input("please give me a number!"))
 #     total+=num #total = total + num
 # print("your total comes to:", total)
-#
+
 # i=0
 # while i<10
 #     print("Hi")
 #
 
-# total = 0
-# done = False
-# while not done:
-#     num = input("give number, q to quit")
-#     if num.lower()=="q"
-#         done = True
-#     else: num=int(num)
-#     total+=num
-# print("Your number is", total)
+total = 0
+done = False
+while not done:
+    num = input("give number, q to quit")
+    if num.lower()=="q":
+        done = True
+    else: num=int(num)
+    total+=num
+print("Your number is", total)
 
 #
 # import random
@@ -62,10 +62,10 @@
 
 
 
-#make sides 100 units long
-turtle = int(input("How many sides?"))
-if turtle > 2:
-n
-    else:
-    print("invalid")
+# #make sides 100 units long
+# turtle = int(input("How many sides?"))
+# if turtle > 2:
+# n
+#     else:
+#     print("invalid")
 
