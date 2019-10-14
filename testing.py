@@ -27,7 +27,7 @@ while not done:
         done = True
     else: num=int(num)
     total+=num
-print("Your number is", total)
+print("Your number total is", total)
 
 #
 # import random
