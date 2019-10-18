@@ -3,11 +3,11 @@
 #     print("T minus", i)
 # print("blast off")
 
-# for i in range(5):
-#     for j in range(5):
-#         print(i)
-#         print(j)
-#
+for i in range(5):
+    for j in range(5):
+        print(i)
+        print(j)
+
 # total = 0
 # for i in range(101):
 #     num=int(input("please give me a number!"))
@@ -18,16 +18,16 @@
 # while i<10
 #     print("Hi")
 #
-
-total = 0
-done = False
-while not done:
-    num = input("give number, q to quit")
-    if num.lower()=="q":
-        done = True
-    else: num=int(num)
-    total+=num
-print("Your number total is", total)
+#
+# total = 0
+# done = False
+# while not done:
+#     num = input("give number, q to quit")
+#     if num.lower()=="q":
+#         done = True
+#     else: num=int(num)
+#     total+=num
+# print("Your number total is", total)
 
 #
 # import random

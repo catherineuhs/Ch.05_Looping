@@ -3,15 +3,15 @@
 '''
  1. Make the following program work.
    '''
-print("This program takes three numbers and returns the sum.")
-total = 0
-
-for i in range(3):
-    num = int(input("Enter a number: "))
-total = total + num
-print("The total is:", total)
-
-
+# print("This program takes three numbers and returns the sum.")
+# total = 0
+#
+# for i in range(3):
+#     num = int(input("Enter a number: "))
+#     total = total + num
+# print("The total is:", total)
+#
+#
 
 
 '''
@@ -19,7 +19,8 @@ print("The total is:", total)
      numbers from 2 to 100, inclusive.
 '''
 
-
+# for i in range(2,101,2):
+#     print(i)
 
 
 
@@ -28,6 +29,13 @@ print("The total is:", total)
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop.
 '''
+
+# i = 10
+# while i > 0:
+#     print(i)
+#     i -= 1
+# print(i)
+# print("blast off")
 
 
 
@@ -39,8 +47,9 @@ print("The total is:", total)
 '''
 
 
-
-
+# import random
+# num = random.randrange(1,10)
+# print(num)
 
 
 '''
@@ -53,3 +62,4 @@ print("The total is:", total)
      if statements.
       
 '''
+num = input(int("Enter a random "))
