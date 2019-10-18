@@ -12,9 +12,11 @@ When the user quits print a win/loss record
 '''
 
 
+a = int(input(("rock, paper, or scissors? \n press 'n' to quit"))
 
-
-
+import random
+num = random.randrange(1,11)
+print(num)
 
 
 
