@@ -48,7 +48,7 @@
 
 
 # import random
-# num = random.randrange(1,10)
+# num = random.randrange(1,11)
 # print(num)
 
 
@@ -62,4 +62,23 @@
      if statements.
       
 '''
-num = input(int("Enter a random "))
+total = 0
+zero = 0
+one = 0
+negative = 0
+for i in range(7):
+    num = int(input("enter a number: "))
+    total = total + num
+    if num == 0:
+        zero = zero + 1
+    elif num > 0:
+        one = one + 1
+    elif num < 0:
+        negative = negative +1
+print("negative numbers:", negative)
+print("zeros:", zero)
+print("positive numbers", one)
+print("the total is:", total)
+
+
+

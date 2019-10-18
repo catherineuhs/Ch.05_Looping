@@ -3,10 +3,10 @@
 #     print("T minus", i)
 # print("blast off")
 
-for i in range(5):
-    for j in range(5):
-        print(i)
-        print(j)
+# for i in range(5):
+#     for j in range(5):
+#         print(i)
+#         print(j)
 
 # total = 0
 # for i in range(101):
@@ -43,11 +43,11 @@ for i in range(5):
 #
 # gives you random numbers between 2 and 99
 #
-# import random
-# num=random.randrange(2,100)
-# num = random.randint()
-# print(num)
-#
+import random
+num=random.randrange(2,100)
+num = random.randint()
+print(num)
+
 #
 # (start number, stop number, step)
 
