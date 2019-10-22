@@ -11,13 +11,36 @@ When the user quits print a win/loss record
 
 '''
 
-
-a = int(input(("rock, paper, or scissors? \n press 'n' to quit"))
-
-import random
-num = random.randrange(1,11)
-print(num)
-
+losses = 0
+wins = 0
+done = False
+while not done:
+    answer = int(input("rock(1), paper(2), or scissors(3)? press 4 to quit."))
+    import random
+    hand = random.randrange(1, 4)
+    if answer == 4:
+        print("you've chosen to quit. wins:", wins, "losses:", losses)
+        done = True
+    elif answer == hand:
+        print("you got a tie")
+    elif answer == 1 and hand == 2:
+        print("you lose")
+        losses = losses + 1
+    elif answer == 1 and hand == 3:
+        print("you win")
+        wins = wins + 1
+    elif answer == 2 and hand == 1:
+        print("you win")
+        wins = wins + 1
+    elif answer == 2 and hand == 3:
+        print("you lose")
+        losses = losses + 1
+    elif answer == 3 and hand == 1:
+        print("you lose")
+        losses = losses + 1
+    elif answer == 3 and hand == 2:
+        print("you win")
+        wins = wins + 1
 
 
 

@@ -3,13 +3,13 @@
 '''
  1. Make the following program work.
    '''
-# print("This program takes three numbers and returns the sum.")
-# total = 0
-#
-# for i in range(3):
-#     num = int(input("Enter a number: "))
-#     total = total + num
-# print("The total is:", total)
+print("This program takes three numbers and returns the sum.")
+total = 0
+
+for i in range(3):
+    num = int(input("Enter a number: "))
+    total = total + num
+print("The total is:", total)
 #
 #
 
@@ -46,11 +46,11 @@
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
 '''
 
-
-import random
-num = random.randrange(1,11)
-print(num)
-
+#
+# import random
+# num = random.randrange(1,11)
+# print(num)
+#
 
 '''
   5. Write a Python program that will:
@@ -62,23 +62,23 @@ print(num)
      if statements.
       
 '''
-# total = 0
-# zero = 0
-# one = 0
-# negative = 0
-# for i in range(7):
-#     num = int(input("enter a number: "))
-#     total = total + num
-#     if num == 0:
-#         zero = zero + 1
-#     elif num > 0:
-#         one = one + 1
-#     elif num < 0:
-#         negative = negative +1
-# print("negative numbers:", negative)
-# print("zeros:", zero)
-# print("positive numbers", one)
-# print("the total is:", total)
-#
+total = 0
+zero = 0
+one = 0
+negative = 0
+for i in range(7):
+    num = int(input("enter a number: "))
+    total = total + num
+    if num == 0:
+        zero = zero + 1
+    elif num > 0:
+        one = one + 1
+    elif num < 0:
+        negative = negative +1
+print("negative numbers:", negative)
+print("zeros:", zero)
+print("positive numbers", one)
+print("the total is:", total)
+
 
 

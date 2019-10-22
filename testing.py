@@ -19,15 +19,15 @@
 #     print("Hi")
 #
 #
-# total = 0
-# done = False
-# while not done:
-#     num = input("give number, q to quit")
-#     if num.lower()=="q":
-#         done = True
-#     else: num=int(num)
-#     total+=num
-# print("Your number total is", total)
+total = 0
+done = False
+while not done:
+    num = input("give number, q to quit")
+    if num.lower() == "q":
+        done = True
+    else: num=int(num)
+    total+=num
+print("Your number total is", total)
 
 #
 # import random
@@ -43,10 +43,10 @@
 #
 # gives you random numbers between 2 and 99
 #
-import random
-num=random.randrange(2,100)
-num = random.randint()
-print(num)
+# import random
+# num=random.randrange(2,100)
+# num = random.randint()
+# print(num)
 
 #
 # (start number, stop number, step)
