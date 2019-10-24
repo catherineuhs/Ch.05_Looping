@@ -15,17 +15,22 @@ natives_movement = random.randrange(7,15)
 camel_fullspeed = random.randrange(10, 21)
 tiredness_from_fullspeed_run = random.randrange(1,4)
 camel_forward = random.randrange(5, 13)
-print("Ride your camel accross the desert while being chased. You need to manage you thirst, how tired the camel is, and how far ahead of the natives you are.")
+print("Ride your camel accross the desert while being chased. You need to manage your thirst, how tired the camel is, and how far ahead of the natives you are.")
 while not done:
-    print("\n \nchoose an option: ")
-    print(" Drink from your canteen.")
-    print("Ahead moderate speed. \n Ahead full speed. \n Stop for the night \n Status check \n Quit." )
-    choice = input( "\n option:")
-    if choice.upper() == "Q": #why doesnt this work :I
+    print("\n \nChoose an option: ")
+    print("Drink from your canteen")
+    print("Ahead moderate speed")
+    print("Ahead full speed")
+    print("Stop for the night")
+    print("Status check")
+    print("Quit")
+    choice = input( "\n Option:")
+    if choice.lower() == "quit": #why doesnt this work :I
+        print("You've chosen to quit.")
         done = True
     elif choice.lower() == "status" or choice.lower() == "status check":
         print("\n Miles traveled:", miles_traveled, "\n Drinks in canteen:", drinks_in_canteen, "\n The natives are", natives_travel, "miles behind you.")
-    elif choice.upper() == "stop for the night":
+    elif choice.lower() == "stop for the night":
         camel_tiredness = 0
         print("the camel is happy :)!")
         natives_travel = natives_travel + natives_movement
