@@ -11,20 +11,20 @@ camel_tiredness = 0
 natives_travel = -20
 drinks_in_canteen = 5
 import random
-natives_movement = random.randrange(7,15)
+natives_movement = random.randrange(7, 15)
 camel_fullspeed = random.randrange(10, 21)
-tiredness_from_fullspeed_run = random.randrange(1,4)
+tiredness_from_fullspeed_run = random.randrange(1, 6)
 camel_forward = random.randrange(5, 13)
 print("Ride your camel accross the desert while being chased. You need to manage your thirst, how tired the camel is, and how far ahead of the natives you are.")
 while not done:
     print("\n \nChoose an option: ")
-    print("Drink from your canteen")
-    print("Ahead moderate speed")
-    print("Ahead full speed")
-    print("Stop for the night")
-    print("Status check")
-    print("Quit")
-    choice = input( "\n Option:")
+    print("Drink from your canteen.")
+    print("Ahead moderate speed.")
+    print("Ahead full speed.")
+    print("Stop for the night.")
+    print("Status check.")
+    print("Quit.")
+    choice = input( "\n Option: ")
     if choice.lower() == "quit": #why doesnt this work :I
         print("You've chosen to quit.")
         done = True
@@ -62,7 +62,7 @@ while not done:
     elif camel_tiredness > 8:
         "Your camel is dead :,("
         done = True
-    if natives_travel == miles_traveled:
+    if natives_travel == 0:
         print("The natives have caught you.")
         done = True
     elif natives_travel == 15: ##is this right? step 21##
