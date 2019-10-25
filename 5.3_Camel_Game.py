@@ -18,55 +18,57 @@ camel_forward = random.randrange(5, 13)
 print("Ride your camel accross the desert while being chased. You need to manage your thirst, how tired the camel is, and how far ahead of the natives you are.")
 while not done:
     print("\n \nChoose an option: ")
-    print("Drink from your canteen.")
-    print("Ahead moderate speed.")
-    print("Ahead full speed.")
-    print("Stop for the night.")
-    print("Status check.")
-    print("Quit.")
+    print("A. Drink from your canteen.")
+    print("B. Ahead moderate speed.")
+    print("C. Ahead full speed.")
+    print("D. Stop for the night.")
+    print("E. Status check.")
+    print("F. Quit.")
     choice = input( "\n Option: ")
-    if choice.lower() == "quit": #why doesnt this work :I
+    if choice.lower() == "f": #why doesnt this work :I
         print("You've chosen to quit.")
         done = True
-    elif choice.lower() == "status" or choice.lower() == "status check":
-        print("\n Miles traveled:", miles_traveled, "\n Drinks in canteen:", drinks_in_canteen, "\n The natives are", natives_travel, "miles behind you.")
-    elif choice.lower() == "stop for the night":
+    elif choice.lower() == "e":
+        print("Miles traveled:", miles_traveled)
+        print("Drinks in canteen:", drinks_in_canteen)
+        print("The natives are", natives_travel, "miles behind you.")
+    elif choice.lower() == "d":
         camel_tiredness = 0
         print("the camel is happy :)!")
         natives_travel = natives_travel + natives_movement
-    elif choice.lower() == "ahead full speed":
+    elif choice.lower() == "c":
         miles_traveled = miles_traveled + camel_fullspeed
         print("you have traveled", miles_traveled, "miles")
         thirst = thirst + 1
         camel_tiredness = camel_tiredness + tiredness_from_fullspeed_run
         natives_travel = natives_travel + natives_movement
-    elif choice.lower() == "ahead moderate speed":
+    elif choice.lower() == "b":
         miles_traveled = miles_traveled + camel_forward
         print("you have traveled", miles_traveled, "miles")
         thirst = thirst + 1
         camel_tiredness = camel_tiredness + 1
         natives_travel = natives_travel + natives_movement
-    elif choice.lower() == "drink from your canteen":
+    elif choice.lower() == "a":
         if drinks_in_canteen > 0:
             drinks_from_canteen = drinks_in_canteen - 1
             thirst = 0
         else:
             print("Error. No drinks left!")
-    if thirst > 4:
+    if not done and thirst > 4:
         print("You are thirsty.")
-    elif thirst > 6:
+    elif not done and thirst > 6:
         print("You died of thirst!")
         done = True
-    if camel_tiredness > 5:
+    if not done and camel_tiredness > 5:
         print("Your camel is getting tired.")
-    elif camel_tiredness > 8:
+    elif not done and camel_tiredness > 8:
         "Your camel is dead :,("
         done = True
-    if natives_travel == 0:
+    if (miles_traveled-natives_travel) == 0:
         print("The natives have caught you.")
         done = True
-    elif natives_travel == 15: ##is this right? step 21##
+    elif (miles_traveled-natives_travel) <= 15: ##is this right? step 21##
         print("The natives are getting close!")
-    if miles_traveled == 200:
+    if miles_traveled >= 200:
         print("You won!")
         done = True
